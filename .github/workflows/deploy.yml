@@ -2,11 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    # Both names are listed so renaming the default branch to `main` doesn't
-    # silently stop deployments.
     branches:
       - main
-      - claude/personal-portfolio-website-suee1v
   workflow_dispatch:
 
 permissions:
