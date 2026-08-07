@@ -99,18 +99,6 @@ window.SITE = {
       stack: ["Event planning", "Communication"],
     },
     {
-      company: "Technology Management Student Association (TMSA), Ontario Tech",
-      role: "Member",
-      start: "Sep 2023",
-      end: "Apr 2025",
-      location: "Ontario, Canada",
-      highlights: [],
-      stack: [],
-      // TODO: this entry says nothing a recruiter can use, and a thin entry
-      // makes the strong ones above look padded. Either delete it, or give it
-      // a real line — an event you ran, a speaker you brought in, a committee.
-    },
-    {
       company: "Best Vanity Toronto",
       role: "Sales Representative",
       start: "May 2022",
