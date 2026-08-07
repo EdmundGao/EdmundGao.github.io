@@ -17,16 +17,20 @@ window.SITE = {
   profile: {
     name: "Edmund Gao",
     headline:
-      "IT and operations professional working at the seam between warehouse automation and the systems that run it. Currently a Master of Networking Technology candidate at Carleton.",
-    location: "Scarborough, Ontario",
+      "IT consulting and technical sales — I help clients scope the right systems, deploy them, and actually get them adopted.",
+
+    // TODO: pick the market you're targeting for 2027. You're from Scarborough
+    // but studying in Ottawa, and a recruiter reading "Scarborough" will assume
+    // Toronto-only. If you'd take either, say so — it widens the funnel.
+    location: "Toronto & Ottawa, Ontario",
 
     // Shown next to the green dot in the hero. Set to null to hide it.
-    availability: "Open to new opportunities",
+    availability: "Seeking full-time roles from Summer 2027",
 
     about: [
-      "I work where operations meets IT. At Advantics Robotics I supported warehouse automation deployments — AGV and AMR systems — helping clients get robotics running inside warehouses that already had their own workflows, staff, and software to work around.",
-      "Before that I implemented a CRM system end to end at Aibao Insurance, built and customized WordPress sites, and learned how much of the value in a technical rollout comes from the unglamorous part: getting people to actually adopt the thing.",
-      "I'm finishing a Master of Networking Technology at Carleton after a BTech in Technology Management from Ontario Tech. I'm looking for a role where I can keep pairing technical depth with the operations and client side — the two halves I like best.",
+      "I sell and deliver technical systems to the people who have to live with them. At Advantics Robotics that meant warehouse automation — walking clients through what AGV and AMR platforms could do on their specific floor, then supporting the deployment once they bought in. The interesting part is never the demo; it's the racking, the staff workflows, and the software already in place that the robots have to fit around.",
+      "At Aibao Insurance I ran a CRM implementation end to end: evaluated HubSpot against Salesforce, configured the platform around how the team actually worked, and wrote the integration guide so the setup could be repeated without me. That project taught me the thing I now lead with — a rollout succeeds or fails on adoption, not on the technology.",
+      "I'm completing a Master of Networking Technology at Carleton in May 2027, after a BTech in Technology Management from Ontario Tech. I'm looking for full-time IT consulting or technical sales work starting summer 2027, where the job is translating between what a client needs and what a system can actually do.",
     ],
 
     links: {
@@ -110,10 +114,11 @@ window.SITE = {
       start: "Sep 2023",
       end: "Apr 2025",
       location: "Ontario, Canada",
-      highlights: [
-        "Active member through the full stretch of the Technology Management program.",
-      ],
+      highlights: [],
       stack: [],
+      // TODO: this entry says nothing a recruiter can use, and a thin entry
+      // makes the strong ones above look padded. Either delete it, or give it
+      // a real line — an event you ran, a speaker you brought in, a committee.
     },
     {
       company: "Best Vanity Toronto",
@@ -209,12 +214,13 @@ window.SITE = {
       ],
     },
     {
-      group: "Working with people",
+      group: "Consulting & Client-Facing",
       items: [
-        "Client solutions",
         "Technical sales",
-        "Cross-functional collaboration",
-        "Event planning",
+        "Solution scoping",
+        "Requirements gathering",
+        "Client training & documentation",
+        "Stakeholder communication",
       ],
     },
   ],
