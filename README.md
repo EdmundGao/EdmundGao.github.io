@@ -44,14 +44,22 @@ apply to you.
 
 ## Publishing
 
-This repo is a GitHub Pages *user site*, which means the repo name must stay
-`edmundgao.github.io` and the site is served from the root of the branch
-configured under **Settings → Pages → Build and deployment**. Set the source to
-"Deploy from a branch" and pick your default branch with folder `/ (root)`.
-Pushes to that branch go live in about a minute.
+This repo is a GitHub Pages *user site*, so the repo name must stay
+`edmundgao.github.io` and the site publishes to `https://edmundgao.github.io/`.
 
-The `.nojekyll` file tells Pages to skip Jekyll processing and just serve the
-files, which is what we want here.
+Deployment runs through GitHub Actions (`.github/workflows/deploy.yml`). Every
+push to the deploying branch uploads the repo root as-is and publishes it —
+there's no build step, because the repo root is already the finished site.
+
+One-time setup: go to **Settings → Pages → Build and deployment** and set
+**Source** to **GitHub Actions**. Without that, the workflow runs but the
+deploy step fails, since Pages has to be told to accept an Actions deployment.
+
+You can also trigger a deploy by hand from the **Actions** tab — pick "Deploy
+to GitHub Pages" and use **Run workflow**.
+
+The `.nojekyll` file tells Pages to skip Jekyll processing and serve the files
+verbatim, which is what we want here.
 
 ### Using a custom domain
 
@@ -86,6 +94,7 @@ python3 -m http.server 8000
 ## Layout
 
 ```
+.github/workflows/      GitHub Actions deployment to Pages
 index.html              markup and section scaffolding
 404.html                not-found page
 assets/css/styles.css   design tokens and all styling
