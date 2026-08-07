@@ -27,10 +27,13 @@ window.SITE = {
     // Shown next to the green dot in the hero. Set to null to hide it.
     availability: "Seeking full-time roles from Summer 2027",
 
+    // Keep this about *how you work*, not a recap of the jobs below — the
+    // timeline already covers those. Repeating them here is the fastest way to
+    // make a short page feel padded.
     about: [
-      "I sell and deliver technical systems to the people who have to live with them. At Advantics Robotics that meant warehouse automation — walking clients through what AGV and AMR platforms could do on their specific floor, then supporting the deployment once they bought in. The interesting part is never the demo; it's the racking, the staff workflows, and the software already in place that the robots have to fit around.",
-      "At Aibao Insurance I ran a CRM implementation end to end: evaluated HubSpot against Salesforce, configured the platform around how the team actually worked, and wrote the integration guide so the setup could be repeated without me. That project taught me the thing I now lead with — a rollout succeeds or fails on adoption, not on the technology.",
-      "I'm completing a Master of Networking Technology at Carleton in May 2027, after a BTech in Technology Management from Ontario Tech. I'm looking for full-time IT consulting or technical sales work starting summer 2027, where the job is translating between what a client needs and what a system can actually do.",
+      "The work I'm best at sits between what a system can do and what a client actually needs. In practice that means being in the room twice: once to scope and sell it honestly, and again when it has to run inside a business that already has its own workflows, staff, and software.",
+      "Doing that across warehouse automation and CRM taught me two things. The constraint is almost never the technology — it's the racking, the headcount, and the process nobody wants to change. And a rollout isn't finished until someone else can repeat it without me, which is why I write the documentation before I leave.",
+      "I'm completing a Master of Networking Technology at Carleton in May 2027, after a BTech in Technology Management from Ontario Tech.",
     ],
 
     links: {
@@ -52,36 +55,23 @@ window.SITE = {
 
   /* ------------------------------------------------------------ experience */
   experience: [
+    // The two Advantics roles are combined into one entry: as separate rows
+    // they repeated each other, and a single row shows the progression better
+    // than two near-identical ones.
     {
       company: "Advantics Robotics",
-      role: "Technical Operations Manager Assistant & Sales",
-      start: "Sep 2025",
+      role: "Technical Operations Sales → Manager Assistant & Sales",
+      start: "Mar 2025",
       end: "Apr 2026",
       location: "Toronto, ON · Hybrid",
       highlights: [
-        "Supported the deployment and ongoing management of AGV and AMR robotic systems in client warehouses, coordinating between the operations floor and the IT side of each rollout.",
-        "Worked directly with clients to scope automation that fit the warehouse they already had — existing racking, staff workflows, and inventory systems — rather than the one a spec sheet assumes.",
-        // TODO: add a number here if you have one — warehouses deployed, units
-        // managed, throughput or labour-cost change on a site. A single
-        // concrete figure will do more for you than three more sentences.
+        "Ran the technical half of the sales conversation — translating AGV and AMR capability into what it would mean on a client's specific floor, against the racking, headcount, and inventory systems they already had.",
+        "Moved from selling into delivery after six months, supporting deployments through to running and owning the integration work between the robots and the warehouse's existing systems.",
+        // TODO: one number, anywhere in these two lines — sites deployed, units
+        // managed, deal size, throughput or labour-cost change. For technical
+        // sales this is the evidence a hiring manager is actually looking for.
       ],
-      stack: [
-        "AGV / AMR systems",
-        "Warehouse operations",
-        "IT integration",
-        "Client solutions",
-      ],
-    },
-    {
-      company: "Advantics Robotics",
-      role: "Technical Operations Sales",
-      start: "Mar 2025",
-      end: "Aug 2025",
-      location: "Toronto, ON · Hybrid",
-      highlights: [
-        "Introduced warehouse automation systems to prospective clients, translating what AGV and AMR platforms actually do into terms an operations manager could evaluate against their own floor.",
-      ],
-      stack: ["Technical sales", "Solution scoping"],
+      stack: ["AGV / AMR", "Solution scoping", "Systems integration"],
     },
     {
       company: "Aibao Insurance",
@@ -95,7 +85,7 @@ window.SITE = {
         "Built and customized WordPress sites, and improved search visibility by optimizing content and tracking performance metrics.",
         "Wrote a slide-deck tutorial documenting the WordPress-to-HubSpot integration so the team could repeat the setup without me.",
       ],
-      stack: ["HubSpot", "Salesforce", "WordPress", "SEO", "CRM implementation"],
+      stack: ["HubSpot", "Salesforce", "WordPress"],
     },
     {
       company: "Ontario Tech University CSSA",
@@ -131,7 +121,7 @@ window.SITE = {
         "Implemented quality control checks on newly assembled vanities, and handled returns and repairs on damaged items.",
         "Diagnosed and resolved customer issues with product usage, maintenance, and repair, and independently organized sales promotions.",
       ],
-      stack: ["Inventory management", "Quality control", "Customer support"],
+      stack: ["Inventory management", "Quality control"],
     },
     {
       company: "Georges P. Vanier Secondary School",
@@ -153,39 +143,25 @@ window.SITE = {
   // TODO: this is the thinnest section and the one worth investing in. If you
   // can add a coursework project from Carleton (a network design, a lab build,
   // anything with a diagram) it will do real work for you here.
-  projects: [
-    {
-      name: "CRM Implementation & Integration Guide",
-      blurb:
-        "Configured and rolled out a CRM at Aibao Insurance after evaluating HubSpot and Salesforce against the team's actual workflows. Documented the WordPress-to-HubSpot integration as a step-by-step slide deck so the setup could be repeated without me in the room.",
-      stack: ["HubSpot", "WordPress", "Salesforce", "Process documentation"],
-      links: {
-        // If you can share the deck, drop the PDF in assets/ and link it here.
-        source: null,
-        demo: null,
-      },
-      featured: true,
-    },
-    {
-      name: "Warehouse Automation Deployments",
-      blurb:
-        "Supported AGV and AMR rollouts at Advantics Robotics — scoping each client's floor, coordinating the deployment, and handling the integration work between the robots and the systems the warehouse already ran on.",
-      stack: ["AGV / AMR", "Systems integration", "Operations"],
-      links: { source: null, demo: null },
-      featured: true,
-    },
-    {
-      name: "This site",
-      blurb:
-        "Hand-written HTML, CSS, and JavaScript with no framework or build step, served from GitHub Pages. Light and dark themes, responsive down to phones, and all content driven by a single data file.",
-      stack: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
-      links: {
-        source: "https://github.com/EdmundGao/EdmundGao.github.io",
-        demo: null,
-      },
-      featured: false,
-    },
-  ],
+  // Empty, so the section hides itself. It previously held three cards, and
+  // two of them just restated the Advantics and Aibao roles in different
+  // words — a section that repeats the timeline reads as filler, which is
+  // worse than not having one.
+  //
+  // Refill it only with work that is NOT already in the timeline above. The
+  // best candidate is a Carleton project — a network design, a lab build,
+  // anything with a diagram — since that would also give the page evidence
+  // for the networking degree, which nothing currently does.
+  //
+  // Shape of an entry:
+  // {
+  //   name: "...",
+  //   blurb: "One or two sentences. Assume the reader has 8 seconds.",
+  //   stack: ["..."],
+  //   links: { source: "https://...", demo: null },
+  //   featured: true,   // renders double-wide
+  // }
+  projects: [],
 
   /* ---------------------------------------------------------------- skills */
   skills: [

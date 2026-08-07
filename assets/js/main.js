@@ -443,6 +443,16 @@
     if (year) year.textContent = new Date().getFullYear();
   }
 
+  /* --------------------------------- drop nav links to sections that hid */
+
+  function pruneNav() {
+    var links = document.querySelectorAll(".nav a[href^='#']");
+    Array.prototype.forEach.call(links, function (link) {
+      var target = document.getElementById(link.getAttribute("href").slice(1));
+      if (target && target.hidden) link.hidden = true;
+    });
+  }
+
   /* ---------------------------------------------- nav highlight on scroll */
 
   function initScrollSpy() {
@@ -540,6 +550,7 @@
     renderSkills();
     renderEducation();
     renderContact();
+    pruneNav();
     initScrollSpy();
     initStickyHeader();
     initReveal();
