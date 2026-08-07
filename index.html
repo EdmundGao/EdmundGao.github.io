@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Edmund Gao — Portfolio</title>
+    <meta
+      name="description"
+      content="Edmund Gao — IT and operations professional working across warehouse automation, systems integration, and CRM implementation. Master of Networking Technology candidate at Carleton University."
+    />
+    <meta name="theme-color" content="#fbfbfa" />
+    <link rel="canonical" href="https://edmundgao.github.io/" />
+
+    <!-- Open Graph / social previews -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Edmund Gao — Portfolio" />
+    <meta
+      property="og:description"
+      content="IT and operations professional working across warehouse automation, systems integration, and CRM implementation."
+    />
+    <meta property="og:url" content="https://edmundgao.github.io/" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Set the theme before first paint so there's no light-mode flash. -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var dark =
+            stored === "dark" ||
+            (!stored &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches);
+          if (dark) document.documentElement.setAttribute("data-theme", "dark");
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Removed automatically once you set draft: false in assets/js/data.js -->
+    <div class="draft-banner" id="draft-banner" hidden>
+      <div class="wrap draft-banner__inner">
+        <strong>Draft.</strong>
+        <span
+          >Content is awaiting review — edit <code>assets/js/data.js</code>, then
+          set <code>draft: false</code> to hide this banner.</span
+        >
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="wrap site-header__inner">
+        <a class="brand" href="#top" data-name>Edmund Gao</a>
+
+        <nav class="nav" aria-label="Sections">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Work</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-label="Toggle dark mode"
+          title="Toggle dark mode"
+        >
+          <svg
+            class="icon-moon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+          <svg
+            class="icon-sun"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ------------------------------------------------------------ hero -->
+      <section class="hero" id="top">
+        <div class="wrap">
+          <p class="hero__eyebrow">
+            <span class="dot" aria-hidden="true"></span>
+            <span id="hero-location"></span>
+          </p>
+          <h1 data-name>Edmund Gao</h1>
+          <p class="hero__headline" id="hero-headline"></p>
+          <div class="hero__actions" id="hero-actions"></div>
+        </div>
+      </section>
+
+      <!-- ----------------------------------------------------------- about -->
+      <section class="section" id="about">
+        <div class="wrap">
+          <div class="section__head">
+            <h2>About</h2>
+            <span class="section__rule" aria-hidden="true"></span>
+          </div>
+          <div class="about__body" id="about-body"></div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------ experience -->
+      <section class="section" id="experience">
+        <div class="wrap">
+          <div class="section__head">
+            <h2>Experience</h2>
+            <span class="section__rule" aria-hidden="true"></span>
+          </div>
+          <div class="timeline" id="experience-list"></div>
+        </div>
+      </section>
+
+      <!-- -------------------------------------------------------- projects -->
+      <section class="section" id="projects">
+        <div class="wrap">
+          <div class="section__head">
+            <h2>Selected work</h2>
+            <span class="section__rule" aria-hidden="true"></span>
+          </div>
+          <div class="projects" id="projects-list"></div>
+        </div>
+      </section>
+
+      <!-- ---------------------------------------------------------- skills -->
+      <section class="section" id="skills">
+        <div class="wrap">
+          <div class="section__head">
+            <h2>Skills</h2>
+            <span class="section__rule" aria-hidden="true"></span>
+          </div>
+          <div class="skills" id="skills-list"></div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------- education & certificates -->
+      <section class="section" id="education">
+        <div class="wrap">
+          <div class="section__head">
+            <h2>Education</h2>
+            <span class="section__rule" aria-hidden="true"></span>
+          </div>
+          <div class="two-col">
+            <div id="education-block">
+              <div id="education-list"></div>
+            </div>
+            <div id="certifications-block" hidden>
+              <p class="subhead">Certifications</p>
+              <div id="certifications-list"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------------------------------------------- contact -->
+      <section class="section contact" id="contact">
+        <div class="wrap">
+          <h2>Let's talk</h2>
+          <p>
+            I'm open to new opportunities in IT, operations, and automation.
+            Email is the fastest way to reach me.
+          </p>
+          <div class="hero__actions" id="contact-actions"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap site-footer__inner">
+        <span>&copy; <span id="year">2026</span> <span data-name></span></span>
+        <a href="#top">Back to top &uarr;</a>
+      </div>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
