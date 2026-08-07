@@ -10,8 +10,8 @@
  * ===========================================================================*/
 
 window.SITE = {
-  // Set to false once you've reviewed the content; removes the yellow banner.
-  draft: true,
+  // Set to true to show a "Draft" banner across the top while you're editing.
+  draft: false,
 
   /* ---------------------------------------------------------------- basics */
   profile: {

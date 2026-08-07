@@ -72,7 +72,7 @@
     else root.removeAttribute("data-theme");
 
     var meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute("content", theme === "dark" ? "#141412" : "#fbfbfa");
+    if (meta) meta.setAttribute("content", theme === "dark" ? "#0b1220" : "#ffffff");
   }
 
   function initTheme() {
