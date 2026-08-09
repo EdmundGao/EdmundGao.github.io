@@ -39,8 +39,13 @@ window.SITE = {
     links: {
       // TODO: double-check this — I read it off your LinkedIn banner image.
       email: "gaojungxiang@gmail.com",
-      github: "https://github.com/EdmundGao",
       linkedin: "https://www.linkedin.com/in/edmund-gao-51777415a/",
+
+      // Off on purpose: for consulting and technical sales nobody screens for
+      // a GitHub profile, so the link carries no upside — while the account's
+      // 2022 coursework repos give a visitor something to hold against you.
+      // Set it back to "https://github.com/EdmundGao" if that changes.
+      github: null,
 
       // Drop a PDF at assets/resume.pdf to make this button work.
       // Set to null to hide it until you have one ready.
