@@ -7,9 +7,9 @@
  * Content was drafted from your LinkedIn profile. Search this file for "TODO"
  * to find every spot still needing you. In rough priority order:
  *
- *   [ ] 1. RESUME PDF — the Résumé button is live and currently 404s. See the
- *          TODO at `links.resume` below. Highest priority: it's a broken link
- *          in the hero, and a recruiter who wants your CV hits a dead end.
+ *   [ ] 1. RESUME PDF — being written by hand. The button is hidden until it
+ *          exists, so nothing is broken in the meantime. See the TODO at
+ *          `links.resume` below for the steps to turn it back on.
  *   [ ] 2. A NUMBER in the Advantics bullets — sites deployed, units managed,
  *          deal size, throughput or cost movement. See the TODO in that entry.
  *   [ ] 3. EVIDENCE FOR THE NETWORKING DEGREE — nothing on the page supports
@@ -62,22 +62,23 @@ window.SITE = {
       // Set it back to "https://github.com/EdmundGao" if that changes.
       github: null,
 
-      // TODO (do this first): this path is a 404 right now — there is no file
-      // at assets/resume.pdf, so the Résumé button in the hero leads nowhere.
+      // null hides the Résumé button entirely, which is where this should stay
+      // until the PDF exists — a hidden button costs nothing, a broken one
+      // reads as careless.
       //
-      // To fix by hand:
-      //   1. Export your résumé as PDF. Name it exactly `resume.pdf`.
-      //   2. Put it in the `assets/` folder, next to the css/ img/ js/ folders.
-      //   3. Commit and push:
-      //        git add assets/resume.pdf
+      // TODO (by hand): when your résumé is ready,
+      //   1. Name the PDF exactly `resume.pdf`.
+      //   2. Put it in `assets/`, beside the css/ img/ js/ folders.
+      //   3. Change the line below to: resume: "assets/resume.pdf",
+      //   4. Commit and push both the PDF and this file:
+      //        git add assets/resume.pdf assets/js/data.js
       //        git commit -m "Add resume PDF"
       //        git push
-      //   4. Load the site and click Résumé to confirm the PDF opens.
+      //   5. Load the site and click Résumé to confirm it opens.
       //
-      // If the résumé isn't ready yet, set this to null instead. A hidden
-      // button costs you nothing; a broken one reads as careless, which is the
-      // wrong signal for consulting and sales roles specifically.
-      resume: "assets/resume.pdf",
+      // Note that Cmd-P on the site prints a clean copy with your contact
+      // details at the top, if you want a starting point.
+      resume: null,
 
       // Your number is on your LinkedIn banner, but a phone number on a public
       // page gets scraped and dialed by recruiters' bots. Left off on purpose —
