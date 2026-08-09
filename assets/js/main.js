@@ -175,6 +175,20 @@
 
     var mount = el("hero-actions");
     if (mount) mount.innerHTML = actions.join("");
+
+    // Print/PDF only — the buttons above are dropped there, so contact
+    // details would otherwise be missing from the resume entirely.
+    var printContact = el("print-contact");
+    if (printContact) {
+      printContact.textContent = [
+        p.location,
+        links.email,
+        links.phone,
+        links.linkedin ? links.linkedin.replace(/^https?:\/\/(www\.)?/, "") : null,
+      ]
+        .filter(Boolean)
+        .join("  ·  ");
+    }
   }
 
   /* ---------------------------------------------------------------- about */

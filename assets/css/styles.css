@@ -827,15 +827,29 @@ svg {
 }
 
 /* =============================================================================
-   Print — makes Cmd-P produce a usable one-page resume
+   Print — doubles as the generator for assets/resume.pdf
    ========================================================================== */
 
+.print-only {
+  display: none;
+}
+
 @media print {
+  .print-only {
+    display: block;
+    font-size: 10pt;
+    color: #000;
+    margin-bottom: 0.5rem;
+  }
+
+  /* The contact section is dropped too: its details are already in the
+     print-only line under the name, and "Let's talk" is web voice on a CV. */
   .site-header,
   .draft-banner,
   .hero__actions,
-  .contact .hero__actions,
   .theme-toggle,
+  .site-footer,
+  .contact,
   .hero::before {
     display: none !important;
   }
