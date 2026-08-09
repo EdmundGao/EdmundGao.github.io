@@ -4,9 +4,24 @@
  * Everything on the page is rendered from the object below, so you never have
  * to touch the HTML. Any section whose array is empty hides itself.
  *
- * Content was drafted from your LinkedIn profile. Read it over — a few spots
- * are marked TODO where a specific number or detail would make the point land
- * much harder than the LinkedIn wording does.
+ * Content was drafted from your LinkedIn profile. Search this file for "TODO"
+ * to find every spot still needing you. In rough priority order:
+ *
+ *   [ ] 1. RESUME PDF — the Résumé button is live and currently 404s. See the
+ *          TODO at `links.resume` below. Highest priority: it's a broken link
+ *          in the hero, and a recruiter who wants your CV hits a dead end.
+ *   [ ] 2. A NUMBER in the Advantics bullets — sites deployed, units managed,
+ *          deal size, throughput or cost movement. See the TODO in that entry.
+ *   [ ] 3. EVIDENCE FOR THE NETWORKING DEGREE — nothing on the page supports
+ *          it. A Carleton project fills this and the empty `projects` section
+ *          at once. See the TODO above `projects`.
+ *   [ ] 4. VERIFY THE EMAIL — read off your LinkedIn banner image, so a
+ *          misread letter is possible. See the TODO at `links.email`.
+ *   [ ] 5. PICK A MARKET — Toronto, Ottawa, or both. See the TODO at
+ *          `location`.
+ *
+ * Not in this file, but worth doing: your LinkedIn still lists Advantics in
+ * the present tense, and this site says the role ended April 2026.
  * ===========================================================================*/
 
 window.SITE = {
@@ -47,8 +62,21 @@ window.SITE = {
       // Set it back to "https://github.com/EdmundGao" if that changes.
       github: null,
 
-      // Drop a PDF at assets/resume.pdf to make this button work.
-      // Set to null to hide it until you have one ready.
+      // TODO (do this first): this path is a 404 right now — there is no file
+      // at assets/resume.pdf, so the Résumé button in the hero leads nowhere.
+      //
+      // To fix by hand:
+      //   1. Export your résumé as PDF. Name it exactly `resume.pdf`.
+      //   2. Put it in the `assets/` folder, next to the css/ img/ js/ folders.
+      //   3. Commit and push:
+      //        git add assets/resume.pdf
+      //        git commit -m "Add resume PDF"
+      //        git push
+      //   4. Load the site and click Résumé to confirm the PDF opens.
+      //
+      // If the résumé isn't ready yet, set this to null instead. A hidden
+      // button costs you nothing; a broken one reads as careless, which is the
+      // wrong signal for consulting and sales roles specifically.
       resume: "assets/resume.pdf",
 
       // Your number is on your LinkedIn banner, but a phone number on a public
@@ -130,21 +158,16 @@ window.SITE = {
   ],
 
   /* ---------------------------------------------------------- selected work */
-  // Concrete things you produced, pulled out of the jobs above so a recruiter
-  // skimming the page sees deliverables rather than only date ranges.
+  // Empty, so the section hides itself (and the "Work" nav link hides with
+  // it). It previously held three cards, but two just restated the Advantics
+  // and Aibao roles in different words, and a section that repeats the
+  // timeline reads as filler.
   //
-  // TODO: this is the thinnest section and the one worth investing in. If you
-  // can add a coursework project from Carleton (a network design, a lab build,
-  // anything with a diagram) it will do real work for you here.
-  // Empty, so the section hides itself. It previously held three cards, and
-  // two of them just restated the Advantics and Aibao roles in different
-  // words — a section that repeats the timeline reads as filler, which is
-  // worse than not having one.
-  //
-  // Refill it only with work that is NOT already in the timeline above. The
-  // best candidate is a Carleton project — a network design, a lab build,
-  // anything with a diagram — since that would also give the page evidence
-  // for the networking degree, which nothing currently does.
+  // TODO: refill this with work that is NOT already in the timeline above.
+  // The best candidate is a Carleton project — a network design, a lab build,
+  // anything with a diagram — because that would also give the page its only
+  // evidence for the networking degree, which nothing currently supports.
+  // Add an entry here and the section and nav link come back on their own.
   //
   // Shape of an entry:
   // {

@@ -29,8 +29,10 @@ apply to you.
 
 ### A few specifics
 
-- **Résumé PDF** — drop the file at `assets/resume.pdf` and the Résumé button
-  works. Set `links.resume` to `null` if you'd rather not post one.
+- **Résumé PDF** — ⚠️ currently missing, so the Résumé button in the hero is a
+  live 404. Drop the file at `assets/resume.pdf` (exact name) and it works.
+  Set `links.resume` to `null` to hide the button until the PDF is ready — a
+  hidden button costs nothing, a broken one looks careless.
 - **Email** — `links.email` drives both the hero button and the contact
   section. If you'd rather not publish a raw address, replace it with a contact
   form URL and adjust the label in `main.js`.
