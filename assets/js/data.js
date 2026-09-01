@@ -19,7 +19,7 @@ window.SITE = {
       email: "gaojungxiang@gmail.com",
       linkedin: "https://www.linkedin.com/in/edmund-gao-51777415a/",
       github: null,
-      resume: null,
+      resume: "resume.html",
       phone: null,
     },
   },
