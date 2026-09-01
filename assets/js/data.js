@@ -46,9 +46,9 @@ window.SITE = {
     // timeline already covers those. Repeating them here is the fastest way to
     // make a short page feel padded.
     about: [
-      "The work I'm best at sits between what a system can do and what a client actually needs. In practice that means being in the room twice: once to scope and sell it honestly, and again when it has to run inside a business that already has its own workflows, staff, and software.",
-      "Doing that across warehouse automation and CRM taught me two things. The constraint is almost never the technology — it's the racking, the headcount, and the process nobody wants to change. And a rollout isn't finished until someone else can repeat it without me, which is why I write the documentation before I leave.",
-      "I'm completing a Master of Networking Technology at Carleton in May 2027, after a BTech in Technology Management from Ontario Tech.",
+      "My work sits between technology and the people who need to use it. I’m involved from the beginning, helping scope solutions and set realistic expectations, and I stay involved through implementation to make sure the solution actually fits the way the business operates.",
+      "Working across warehouse automation and CRM has taught me that the biggest challenges are rarely technical. They usually come down to existing processes, staffing, physical layouts, or software that a business already relies on. I also make documentation and knowledge transfer part of the implementation, so the team can manage and maintain the solution after I’m gone.",
+      "I’m completing a Master of Networking Technology at Carleton University in May 2027, following a BTech in Technology Management from Ontario Tech University.",
     ],
 
     links: {
