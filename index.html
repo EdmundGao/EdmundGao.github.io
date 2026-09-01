@@ -43,7 +43,6 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Removed automatically once you set draft: false in assets/js/data.js -->
     <div class="draft-banner" id="draft-banner" hidden>
       <div class="wrap draft-banner__inner">
         <strong>Draft.</strong>
@@ -106,7 +105,6 @@
     </header>
 
     <main id="main">
-      <!-- ------------------------------------------------------------ hero -->
       <section class="hero" id="top">
         <div class="wrap">
           <p class="hero__eyebrow">
@@ -115,14 +113,11 @@
           </p>
           <h1 data-name>Edmund Gao</h1>
           <p class="hero__headline" id="hero-headline"></p>
-          <!-- Contact details for the printed/PDF version, where the buttons
-               below are dropped. Hidden on screen. -->
           <p class="print-only" id="print-contact"></p>
           <div class="hero__actions" id="hero-actions"></div>
         </div>
       </section>
 
-      <!-- ----------------------------------------------------------- about -->
       <section class="section" id="about">
         <div class="wrap">
           <div class="section__head">
@@ -133,7 +128,6 @@
         </div>
       </section>
 
-      <!-- ------------------------------------------------------ experience -->
       <section class="section" id="experience">
         <div class="wrap">
           <div class="section__head">
@@ -144,7 +138,6 @@
         </div>
       </section>
 
-      <!-- -------------------------------------------------------- projects -->
       <section class="section" id="projects">
         <div class="wrap">
           <div class="section__head">
@@ -155,7 +148,6 @@
         </div>
       </section>
 
-      <!-- ---------------------------------------------------------- skills -->
       <section class="section" id="skills">
         <div class="wrap">
           <div class="section__head">
@@ -166,7 +158,6 @@
         </div>
       </section>
 
-      <!-- ------------------------------------------- education & certificates -->
       <section class="section" id="education">
         <div class="wrap">
           <div class="section__head">
@@ -185,7 +176,6 @@
         </div>
       </section>
 
-      <!-- --------------------------------------------------------- contact -->
       <section class="section contact" id="contact">
         <div class="wrap">
           <h2>Let's talk</h2>
@@ -206,7 +196,8 @@
       </div>
     </footer>
 
-    <script src="assets/js/data.js"></script>
+    <!-- Cache-bust the content file so visitors receive the latest portfolio data. -->
+    <script src="assets/js/data.js?v=20260901"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
