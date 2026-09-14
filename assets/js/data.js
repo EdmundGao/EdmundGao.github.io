@@ -98,9 +98,9 @@ window.SITE = {
   projects: [],
 
   skills: [
-    { group: "Technical", items: ["Python", "SQL", "HTML", "WordPress", "Networking"] },
+    { group: "Technical", items: ["Python", "SQL", "HTML", "WordPress", "Networking", "AWS", "PowerShell", "Linux", "Gephi Data Visualization", "GitHub"] },
     { group: "Operations & Automation", items: ["AGV / AMR systems", "Warehouse operations", "IT integration", "Inventory management", "Quality control"] },
-    { group: "Business Systems", items: ["HubSpot", "Salesforce", "CRM implementation", "SEO", "Microsoft Office"] },
+    { group: "Business Systems", items: ["HubSpot", "Salesforce", "CRM implementation", "SEO", "Microsoft Office", "Jira", "Linux"] },
     { group: "Consulting & Client-Facing", items: ["Technical sales", "Solution scoping", "Requirements gathering", "Client training & documentation", "Stakeholder communication"] },
   ],
 
